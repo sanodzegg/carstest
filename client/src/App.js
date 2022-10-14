@@ -3,7 +3,7 @@ import axios from "axios";
 function App() {
 
   const get = async () => {
-    const res = axios.get("http://localhost:5000/all");
+    const res = axios.get("https://carstest-ctzd.vercel.app/all");
     const data = await res;
     console.log(data);
   }
