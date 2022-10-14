@@ -7,6 +7,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(require("./routes/mainRoutes"));
+
+app.get("/", (req, res) => {
+    res.send("Hello World!");
+});
  
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
